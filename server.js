@@ -24,8 +24,8 @@ connection.connect(function (err) {
       name: "choice",
       choices: [
         "View all Employees",
-        "View all employees by Department",
-        "View all employees by Manager",
+        "View all Employees by Department",
+        "View all Employees by Manager",
         "Add Employee",
         "Remove Employee",
         "Update Employee Role",
@@ -35,15 +35,32 @@ connection.connect(function (err) {
   ]).then((initialRes) => {
         switch(initialRes.choice){
             case "Remove Employee":
-            console.log("works ig");
-            break;
-
+                removeEmployee ();
+                break;
+            case "View all Employees":
+                viewAll();
+                break;
+            case "View all Employees by Department":
+                viewByDep();
+                break;
+            case "View all Employees by Manager":
+                viewByManager();
+                break;
+            case "Add Employee":
+                addEmployee();
+                break;
+            case "Update Employee Role":
+                updateRole();
+                break;
+            case "Update Employee Manager":
+                updateManager();
+                break;
 
         }
   })
 
 
-  
+
   connection.end();
 });
 
