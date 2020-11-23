@@ -76,8 +76,41 @@ function init (){
 
 
 
+function removeEmployee () {
+
+    
+}
+
+function viewAll () {
 
 
-function exitApp (){
+}
+
+function viewByDep () { 
+
+
+}
+
+function viewByManager () {
+
+
+}
+
+function addEmployee () {
+
+
+}
+
+function updateRole () {
+
+
+}
+
+function updateManager () {
+
+
+}
+
+function exitApp () {
     connection.end();
 }
