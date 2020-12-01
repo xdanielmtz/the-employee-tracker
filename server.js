@@ -131,7 +131,34 @@ function addEmployee () {
             name: "lastName"
         },
         {
-            type:
+            type: "list",
+            message: "What is the role of the employee?",
+            name: "newRole",
+            choices: [
+                "Sales Lead",
+                "Sales Person",
+                "Lead Engineer",
+                "Software Engineer",
+                "Accountant Manager",
+                "Accountant",
+                "Legal Team Lead",
+                "Lawyer",
+            ]
+        },
+        {
+            type: "list",
+            message: "What is the manager of the employee?",
+            name: "newManager",
+            choices: [
+                "John Doe",
+                "Mike Chan",
+                "Ashley Rodriguez",
+                "Kevin Tupik",
+                "Molly Brown",
+                "Sarah Lord",
+                "Tom Allen",
+                "null",
+            ]
         }
           
     ])
@@ -139,15 +166,29 @@ function addEmployee () {
 }
 
 function updateRole () {
-
+    inquirer.prompt([
+        {
+            type: "",
+            message: "",
+            name: "",
+        }
+    ])
 
 }
 
 function updateManager () {
+    inquirer.prompt([
+        {
+            type: "",
+            message: "",
+            name: "",
+        }
+    ])
 
 
 }
 
 function exitApp () {
+    console.log("Good Bye!")
     connection.end();
 }
